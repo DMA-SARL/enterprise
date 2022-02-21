@@ -8,9 +8,11 @@
           <div class="col-lg-5">
             <div class="hero-content">
               <h1>Secure IT Solutions for a more secure environment</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+              </p>
 
-              <a [routerLink]="['/contact']" class="btn btn-primary">Nous contacter</a>
+              <a [routerLink]="['/contact']" class="btn btn-primary">{{ 'Contact Us' }}</a>
             </div>
           </div>
 
@@ -56,7 +58,7 @@
     <div class="row">
       <div class="col-lg-6">
         <div class="repair-about-content">
-          <span class="sub-title">About Us</span>
+          <span class="sub-title">{{ 'About Us' | translate }}</span>
           <h2>We have 35 years of experience in repair services</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 

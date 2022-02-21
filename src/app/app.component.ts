@@ -18,7 +18,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     private router: Router,
     private activatedRoute: ActivatedRoute,
     private titleService: Title) {
-    translate.setDefaultLang('en');
+    translate.setDefaultLang('fr');
   }
 
   ngAfterViewInit(): void {
