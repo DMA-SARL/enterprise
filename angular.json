@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "b46cff55-5187-4267-a485-21c76baa03b5"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -50,12 +53,32 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/compiles/js/email-decode.min.js",
+              "src/compiles/js/jquery.min.js",
+              "src/compiles/js/bootstrap.bundle.min.js",
+              "src/compiles/js/appear.min.js",
+              "src/compiles/js/imagesloaded.pkgd.min.js",
+              "src/compiles/js/isotope.pkgd.min.js",
+              "src/compiles/js/magnific-popup.min.js",
+              "src/compiles/js/meanmenu.min.js",
+              "src/compiles/js/odometer.min.js",
+              "src/compiles/js/owl.carousel.min.js",
+              "src/compiles/js/slick.min.js",
+              "src/compiles/js/wow.min.js",
+              "src/compiles/js/feather.min.js",
+              "src/compiles/js/form-validator.min.js",
+              "src/compiles/js/contact-form-script.js",
+              "src/compiles/js/main.js"
+            ],
+            "serviceWorker": true,
+            "ngswConfigPath": "ngsw-config.json"
           },
           "configurations": {
             "production": {
@@ -118,7 +141,8 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": [
               "src/styles.scss"
