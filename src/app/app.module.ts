@@ -19,8 +19,6 @@ import { ComingSoonComponent } from './pages/coming-soon/coming-soon.component';
 import { FeaturesComponent } from './pages/features/features.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { AboutComponent } from './pages/about/about.component';
-import { FeatherModule } from 'angular-feather';
-import { allIcons } from 'angular-feather/icons';
 
 @NgModule({
   declarations: [
@@ -57,8 +55,6 @@ import { allIcons } from 'angular-feather/icons';
             deps: [HttpClient]
         }
     }),
-
-    FeatherModule.pick(allIcons)
   ],
   providers: [],
   bootstrap: [AppComponent]
