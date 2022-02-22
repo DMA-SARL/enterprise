@@ -7,12 +7,16 @@
         <div class="row h-100 justify-content-center align-items-center">
           <div class="col-lg-5">
             <div class="hero-content">
-              <h1>Secure IT Solutions for a more secure environment</h1>
+              <h1>DMA Corporation est votre agence web digitale</h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                DMA Corporation est une agence d'Intégration et d'Édition des Logiciels d'entreprise.
+                <br>
+                D’un simple Site web à un Logiciel complet,
+                notre équipe analyse précisément vos besoins et
+                développe la solution la plus adaptée en s’appuyant sur des technologies reconnues.
               </p>
 
-              <a [routerLink]="['/contact']" class="btn btn-primary">{{ 'Contact Us' }}</a>
+              <a [routerLink]="['/contact']" class="btn btn-primary">{{ 'Contact Us' | translate }}</a>
             </div>
           </div>
 
@@ -59,16 +63,44 @@
       <div class="col-lg-6">
         <div class="repair-about-content">
           <span class="sub-title">{{ 'About Us' | translate }}</span>
-          <h2>We have 35 years of experience in repair services</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h2>Nous avons 3+ ans d'expériences dans le domaine de création des applications web et mobiles</h2>
+          <p>
+            Nous est une Agence Web et Digitale
+            basée à Douala au Cameroun spécialisée
+            dans le Développement et l’intégration de solutions de
+            Gestion sur mesure pour entreprises, le Développement de
+            plateformes digitales (E-commerce, e-learning, e-services etc…),
+            la Création de Sites Web professionnels, le Développement
+            d’Applications Web et Mobiles, le Développement d’applications Métier,
+            l’UI/UX Design, ainsi que dans la Création Graphique et la Formation
+            Pratique dans les différents métiers du Numérique.
+          </p>
 
           <ul>
-            <li><span><i data-feather="check"></i> Experienced Professionals</span></li>
-            <li><span><i data-feather="check"></i> Expert Technical Skills</span></li>
-            <li><span><i data-feather="check"></i> Excellent Reputation</span></li>
-            <li><span><i data-feather="check"></i> Friendly Service</span></li>
-            <li><span><i data-feather="check"></i> Trustworthy See Reviews</span></li>
-            <li><span><i data-feather="check"></i> Affordable Diagnosis</span></li>
+            <li>
+              <span>
+                <i data-feather="check"></i>
+                {{ 'Experienced Professionals' | translate }}
+              </span>
+            </li>
+            <li>
+              <span>
+                <i data-feather="check"></i>
+                {{ "Expert Technical Skills" | translate }}
+              </span>
+            </li>
+            <li>
+              <span>
+                <i data-feather="check"></i>
+                {{ "Excellent Reputation" | translate }}
+              </span>
+            </li>
+            <li>
+              <span>
+                <i data-feather="check"></i>
+                {{ "Friendly Service" | translate }}
+              </span>
+            </li>
           </ul>
         </div>
       </div>
@@ -91,10 +123,12 @@
 <div class="ml-services-area ptb-80">
   <div class="container">
     <div class="section-title">
-      <span class="sub-title">Our Solutions</span>
-      <h2>Our Services</h2>
+      <span class="sub-title">{{ 'Our Solutions' | translate }}</span>
+      <h2>{{ "Our Services" | translate }}</h2>
       <div class="bar"></div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>
+        Nous proposons des solutions digitales évolutives aux grands publics et aux entreprises
+      </p>
     </div>
 
     <div class="row">
@@ -176,9 +210,9 @@
     <div class="row align-items-center">
       <div class="col-lg-6">
         <div class="cta-repair-content">
-          <h3>We'll help you get back to work</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-          <a href="contact.html" class="btn btn-primary">Contact Us</a>
+          <h3>{{ "We'll help you get back to work" | translate }}</h3>
+          <p></p>
+          <a routerLink="contact" class="btn btn-primary">{{ "Contact Us" | translate }}</a>
         </div>
       </div>
 
@@ -199,45 +233,45 @@
 <div class="funfacts-area ptb-80">
   <div class="container">
     <div class="section-title">
-      <h2>We always try to understand users expectation</h2>
+      <h2>{{ "We always try to understand users expectation" | translate }}</h2>
       <div class="bar"></div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p></p>
     </div>
 
     <div class="row">
       <div class="col-lg-3 col-md-3 col-6 col-sm-3">
         <div class="funfact">
-          <h3><span class="odometer" data-count="180">00</span>K</h3>
-          <p>Downloaded</p>
+          <h3><span class="odometer" data-count="80">00</span>K</h3>
+          <p>{{ "Visited" | translate }}</p>
         </div>
       </div>
 
       <div class="col-lg-3 col-md-3 col-6 col-sm-3">
         <div class="funfact">
           <h3><span class="odometer" data-count="20">00</span>K</h3>
-          <p>Feedback</p>
+          <p>{{ "Feedback" | translate }}</p>
         </div>
       </div>
 
       <div class="col-lg-3 col-md-3 col-6 col-sm-3">
         <div class="funfact">
-          <h3><span class="odometer" data-count="500">00</span>+</h3>
-          <p>Workers</p>
+          <h3><span class="odometer" data-count="100">00</span>+</h3>
+          <p>{{ "Workers" | translate }}</p>
         </div>
       </div>
 
       <div class="col-lg-3 col-md-3 col-6 col-sm-3">
         <div class="funfact">
-          <h3><span class="odometer" data-count="70">00</span>+</h3>
-          <p>Contributors</p>
+          <h3><span class="odometer" data-count="15">00</span>+</h3>
+          <p>{{ "Contributors" | translate }}</p>
         </div>
       </div>
     </div>
 
     <div class="contact-cta-box">
-      <h3>Vous avez une question à propos de nous?</h3>
-      <p>N'hésitez à nous poser maintenant </p>
-      <a routerLink="contact" class="btn btn-primary">Contacter</a>
+      <h3>{{ "Have any question about us?" | translate }}</h3>
+      <p>{{ "Don't hesitate to contact us" | translate }}</p>
+      <a routerLink="contact" class="btn btn-primary">{{ "Contact" | translate }}</a>
     </div>
 
     <div class="map-bg">
@@ -251,9 +285,9 @@
 <div class="team-area repair-team-area ptb-80 bg-f9f6f6">
   <div class="container">
     <div class="section-title">
-      <h2>Our Awesome Team</h2>
+      <h2>{{ "Our Awesome Team" | translate }}</h2>
       <div class="bar"></div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p></p>
     </div>
 
     <div class="row">
@@ -361,9 +395,9 @@
 <div class="repair-why-choose-us ptb-80 pb-0">
   <div class="container">
     <div class="section-title">
-      <h2>Why We Are Best From Others</h2>
+      <h2>{{ "Why We Are Best From Others" | translate }}</h2>
       <div class="bar"></div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p></p>
     </div>
 
     <div class="row">
@@ -373,7 +407,9 @@
             <i class="flaticon-handshake"></i>
           </div>
           <h3>Quick Repair Process</h3>
+
           <p>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+
           <a href="#"><i data-feather="arrow-right"></i></a>
 
           <div class="back-icon">
@@ -420,9 +456,11 @@
 <div class="works-area ptb-80 bg-f7fafd">
   <div class="container">
     <div class="section-title">
-      <h2>Our Recent Works</h2>
+      <h2>{{ "Our Recent Works" | translate }}</h2>
       <div class="bar"></div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>
+
+      </p>
     </div>
   </div>
 
@@ -431,7 +469,9 @@
       <div class="single-works">
         <img src="assets/img/works-image/1.jpg" alt="image">
 
-        <a href="#" class="icon"><i data-feather="settings"></i></a>
+        <a href="#" class="icon">
+          <i data-feather="link"></i>
+        </a>
 
         <div class="works-content">
           <h3><a href="#">Incredible infrastructure</a></h3>
@@ -496,9 +536,11 @@
 <div class="blog-area ptb-80">
   <div class="container">
     <div class="section-title">
-      <h2>The News from Our Blog</h2>
+      <h2>{{ "Latest News" | translate }}</h2>
       <div class="bar"></div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>
+
+      </p>
     </div>
 
     <div class="row">
@@ -515,13 +557,18 @@
           </div>
 
           <div class="blog-post-content">
-            <h3><a href="single-blog.html">The security risks of changing package owners</a></h3>
+            <h3>
+              <a href="single-blog">The security risks of changing package owners</a>
+            </h3>
 
-            <span>by <a href="#">admin</a></span>
+            <span>{{ 'by' | translate }} <a href="#">admin</a></span>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
 
-            <a href="#" class="read-more-btn">Read More <i data-feather="arrow-right"></i> </a>
+            <a href="#" class="read-more-btn">
+              {{ "Read More" | translate }}
+              <i data-feather="arrow-right"></i>
+            </a>
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@
   <div class="d-table">
     <div class="d-table-cell">
       <div class="container">
-        <h2>Nos derniers blogs</h2>
+        <h2>{{ "Latest News" | translate }}</h2>
       </div>
     </div>
   </div>
@@ -38,14 +38,21 @@
               </div>
 
               <div class="blog-post-content">
-                <h3><a href="single-blog.html">The security risks of changing package owners</a></h3>
+                <h3>
+                  <a routerLink="single-blog">The security risks of changing package owners</a>
+                </h3>
 
-                <span>by <a href="#">admin</a></span>
+                <span>{{ 'by' | translate }} <a href="#">admin</a></span>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                </p>
 
-                <a href="#" class="read-more-btn">Read More <i data-feather="arrow-right"></i> </a>
+                <a href="#" class="read-more-btn">
+                  {{ "Read More" | translate }}
+                  <i data-feather="arrow-right"></i>
+                </a>
               </div>
             </div>
           </div>

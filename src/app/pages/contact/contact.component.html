@@ -3,7 +3,7 @@
   <div class="d-table">
     <div class="d-table-cell">
       <div class="container">
-        <h2>Nous Contacter</h2>
+        <h2>{{ "Contact Us" | translate }}</h2>
       </div>
     </div>
   </div>
@@ -28,7 +28,7 @@
           <div class="icon">
             <i data-feather="mail"></i>
           </div>
-          <h3>Nos Mails</h3>
+          <h3>{{ "Mail here" | translate }}</h3>
           <p>
             <a href="#">
               <span class="__cf_email__">
@@ -51,8 +51,8 @@
           <div class="icon">
             <i data-feather="map-pin"></i>
           </div>
-          <h3>Notre adresse</h3>
-          <p>1394 Rue du Pasteur Lottin Samé, Akwa, Douala, Cameroun</p>
+          <h3>{{ "Visit here" | translate }}</h3>
+          <p>{{ "site.address" | translate }}</p>
           <!-- <p>Rue Laborex, Akwa, Douala, Cameroun</p> -->
         </div>
       </div>
@@ -62,9 +62,9 @@
           <div class="icon">
             <i data-feather="phone"></i>
           </div>
-          <h3>Nos numéros</h3>
-          <p><a href="#">+237 690 26 32 12</a></p>
-          <p><a href="#">+237 672 24 34 91</a></p>
+          <h3>{{ "Call here" | translate }}</h3>
+          <p><a href="#">(+237) 690 26 32 12</a></p>
+          <p><a href="#">(+237) 672 24 34 91</a></p>
         </div>
       </div>
     </div>
@@ -81,9 +81,9 @@
 <div class="contact-area ptb-80">
   <div class="container">
     <div class="section-title">
-      <h2>Nous contacter</h2>
+      <h2>{{ "Contact Us" | translate }}</h2>
       <div class="bar"></div>
-      <p>Anything On your Mind. We’ll Be Glad To Assist You!</p>
+      <p>{{ "Anything On your Mind. We’ll Be Glad To Assist You!" | translate }}</p>
     </div>
 
     <div class="row h-100 justify-content-center align-items-center">
@@ -97,7 +97,7 @@
             <div class="col-lg-12 col-md-12">
               <div class="form-group">
                 <input type="text" name="name" id="name" class="form-control" required
-                  data-error="Please enter your name" placeholder="Name">
+                  attr.data-error="{{ 'Please enter your name' | translate }}" [placeholder]="'Name' | translate">
                 <div class="help-block with-errors"></div>
               </div>
             </div>
@@ -105,15 +105,16 @@
             <div class="col-lg-12 col-md-12">
               <div class="form-group">
                 <input type="email" name="email" id="email" class="form-control" required
-                  data-error="Please enter your email" placeholder="Email">
+                  attr.data-error="{{ 'Please enter your email' | translate }}" [placeholder]="'Email' | translate">
                 <div class="help-block with-errors"></div>
               </div>
             </div>
 
             <div class="col-lg-12 col-md-6">
               <div class="form-group">
-                <input type="text" name="phone_number" id="phone_number" required data-error="Please enter your number"
-                  class="form-control" placeholder="Phone">
+                <input type="text" name="phone_number" id="phone_number" required
+                  attr.data-error="{{ 'Please enter your number' | translate }}"
+                  class="form-control" [placeholder]="'Phone' | translate">
                 <div class="help-block with-errors"></div>
               </div>
             </div>
@@ -121,7 +122,7 @@
             <div class="col-lg-12 col-md-6">
               <div class="form-group">
                 <input type="text" name="msg_subject" id="msg_subject" class="form-control" required
-                  data-error="Please enter your subject" placeholder="Subject">
+                  attr.data-error="{{ 'Please enter your subject' | translate }}" [placeholder]="'Subject' | translate">
                 <div class="help-block with-errors"></div>
               </div>
             </div>
@@ -129,13 +130,15 @@
             <div class="col-lg-12 col-md-12">
               <div class="form-group">
                 <textarea name="message" class="form-control" id="message" cols="30" rows="5" required
-                  data-error="Write your message" placeholder="Your Message"></textarea>
+                  attr.data-error="{{ 'Write your message' | translate }}" [placeholder]="'Your Message' | translate"></textarea>
                 <div class="help-block with-errors"></div>
               </div>
             </div>
 
             <div class="col-lg-12 col-md-12">
-              <button type="submit" class="btn btn-primary">Send Message</button>
+              <button type="submit" class="btn btn-primary">
+                {{ "Send Message" | translate }}
+              </button>
               <div id="msgSubmit" class="h3 text-center hidden"></div>
               <div class="clearfix"></div>
             </div>

@@ -50,10 +50,11 @@
         </div>
 
         <div class="others-option">
-          <a href="#" class="cart-wrapper-btn">
-            <i data-feather="globe"></i>
-            <span class="lang">FR</span>
-          </a>
+          <img [src]="'/assets/img/lang/'+lang+'.png'" height="14px">
+          <select class="pointer pe-1 me-2 border-0" [(ngModel)]="lang" (change)="changeLang()">
+            <option value="fr">FR</option>
+            <option value="en">EN</option>
+          </select>
           <a [routerLink]="['/contact']" class="btn btn-primary">{{ 'Contact' | translate }}</a>
         </div>
       </nav>
@@ -73,10 +74,11 @@
       <div class="container">
         <div class="option-inner">
           <div class="others-option">
-            <a href="#!" class="cart-wrapper-btn">
-              <i data-feather="globe"></i>
-              <span class="lang">FR</span>
-            </a>
+            <img [src]="'/assets/img/lang/'+lang+'.png'" height="14px">
+            <select class="pointer pe-1 me-2 border-0" [(ngModel)]="lang" (change)="changeLang()">
+              <option value="fr">FR</option>
+              <option value="en">EN</option>
+            </select>
             <a [routerLink]="['/contact']"class="btn btn-primary">{{ 'Contact' | translate }}</a>
           </div>
         </div>

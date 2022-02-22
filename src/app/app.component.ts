@@ -13,15 +13,15 @@ declare const feather: any, $: any;
 })
 export class AppComponent implements OnInit, AfterViewInit {
   title = 'DMA Enterprise';
+  lang = 'fr';
 
   constructor(private translate: TranslateService,
-    private router: Router,
-    private activatedRoute: ActivatedRoute,
-    private titleService: Title) {
-    translate.setDefaultLang('fr');
-  }
+              private router: Router,
+              private activatedRoute: ActivatedRoute,
+              private titleService: Title) { }
 
   ngAfterViewInit(): void {
+    this.setDefaultLang()
     this.initView();
   }
 
@@ -43,6 +43,23 @@ export class AppComponent implements OnInit, AfterViewInit {
     else {
       return activatedRoute;
     }
+  }
+
+  changeLang() {
+    this.translate.setDefaultLang(this.lang);
+    this.translate.use(this.lang);
+    localStorage.setItem('language', this.lang);
+  }
+
+  setDefaultLang() {
+    const userLang = localStorage.getItem('language') || navigator.language;
+    if (userLang.startsWith('en')) {
+      this.lang = 'en';
+    }
+
+    this.translate.setDefaultLang(this.lang);
+    this.translate.use(this.lang);
+    localStorage.setItem('language', this.lang);
   }
 
   initView() {
