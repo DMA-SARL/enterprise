@@ -14,9 +14,18 @@
   "Company": "Company",
   "Support": "Support",
   "site": {
+    "main-title": "DMA Corporation is your digital web agency",
+    "main-subtitle": "DMA Corporation is an enterprise software integration and publishing agency.",
+    "main-subtitle-1": "From a simple website to complete software, our team precisely analyzes your needs and develops the most suitable solution based on recognized technologies.",
+    "description": "DMA is a startup offering IT services, cloud solutions, infrastructure management, technical support and support in the process of digitizing your business.",
     "copyright": "Copyright @2022 DMA SARL, by DMA Corporation. All Rights Reserved",
     "address": "1394 Pasteur Lottin Samé Street, Akwa, Douala, Cameroon",
-    "not-found": "The page you are looking for might have been removed, had its name changed or is temporarily unavailable."
+    "not-found": "The page you are looking for might have been removed, had its name changed or is temporarily unavailable.",
+    "cta": "DMA care about the customers’ satisfaction . It is why, our expertise in the field of information technologies aims to provide our customers with a remarkable quality service that defies all competition.",
+    "about": {
+      "title": "We have 3+ years of experience in the field of creation of web and mobile applications",
+      "content": "We is a Web and Digital Agency based in Douala in Cameroon specialized in the Development and integration of tailor-made Management solutions for companies, the Development of digital platforms (E-commerce, e-learning, e-services etc ...), the Creation of Professional Websites, the Development of Web and Mobile Applications, the Development of Business Applications, UI/UX Design, as well as in Graphic Design and Practical Training in the various Digital professions."
+    }
   },
   "Address": "Address",
   "Phone": "Phone",
@@ -53,6 +62,12 @@
   "Our Clients Feedback": "Our Clients Feedback",
   "Subject": "Subject",
   "Page not found": "Page not found",
+  "DMA is a team of experts always ready to intervene for your satisfaction.": "DMA is a team of experts always ready to intervene for your satisfaction.",
+  "Experienced Professionals": "Experienced Professionals",
+  "Excellent Reputation": "Excellent Reputation",
+  "Expert Technical Skills": "Expert Technical Skills",
+  "More than 10 projects completed for clients in the world.": "More than 10 projects completed for clients in the world.",
+  "Hello": "Hello",
   "Hello": "Hello",
   "Hello": "Hello",
   "Hello": "Hello",

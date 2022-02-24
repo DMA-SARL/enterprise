@@ -19,6 +19,7 @@ import { ComingSoonComponent } from './pages/coming-soon/coming-soon.component';
 import { FeaturesComponent } from './pages/features/features.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { AboutComponent } from './pages/about/about.component';
+import { AwtPipe } from './pipes/awt.pipe';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { AboutComponent } from './pages/about/about.component';
     ComingSoonComponent,
     FeaturesComponent,
     NotFoundComponent,
-    AboutComponent
+    AboutComponent,
+    AwtPipe
   ],
   imports: [
     BrowserModule,
@@ -49,11 +51,11 @@ import { AboutComponent } from './pages/about/about.component';
     // ngx-translate and the loader module
     HttpClientModule,
     TranslateModule.forRoot({
-        loader: {
-            provide: TranslateLoader,
-            useFactory: HttpLoaderFactory,
-            deps: [HttpClient]
-        }
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
     }),
   ],
   providers: [],

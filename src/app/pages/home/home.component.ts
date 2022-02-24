@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-declare const feather: any, $: any;
+declare const $: any;
 
 @Component({
   selector: 'app-home',
@@ -12,9 +12,6 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    // Feather Icon Js
-	  feather.replace();
-
     // Odometer JS
     $('.odometer').appear(function(e: any) {
       var odo = $(".odometer");

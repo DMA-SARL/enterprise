@@ -1,5 +1,5 @@
 (function($){
-	// "use strict";
+	"use strict";
 
   // Feather Icon Js
   feather.replace();
@@ -473,11 +473,17 @@
       });
       wow.init();
     }
-	});
 
-	// Preloader
-  $(window).on('load', function () {
+    // Preloader
     $('.preloader').fadeOut();
-  });
+
+    // Feather Icon Js
+    feather.replace();
+
+    // Mean Menu
+    $('.mean-menu').meanmenu({
+      meanScreenWidth: "991"
+    });
+	});
 
 }(jQuery));

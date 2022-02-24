@@ -14,9 +14,18 @@
   "Company": "Entreprise",
   "Support": "Support",
   "site": {
+    "main-title": "DMA Corporation est votre agence web digitale",
+    "main-subtitle": "DMA Corporation est une agence d'Intégration et d'Édition des Logiciels d'entreprise.",
+    "main-subtitle-1": "D’un simple Site web à un Logiciel complet, notre équipe analyse précisément vos besoins et développe la solution la plus adaptée en s’appuyant sur des technologies reconnues.",
+    "description": "DMA est une startup proposant des services informatiques, des solutions cloud, de la gestion d'infrastructure, du support technique et de l'accompagnement dans le processus de digitalisation de votre entreprise.",
     "copyright": "Droits d'auteurs @2022 DMA SARL, par DMA Corporation. Tout droits réservés.",
     "address": "1394 Rue du Pasteur Lottin Samé, Akwa, Douala, Cameroun",
-    "not-found": "La page que vous recherchez a peut-être été supprimée, son nom a été modifié ou est temporairement indisponible."
+    "not-found": "La page que vous recherchez a peut-être été supprimée, son nom a été modifié ou est temporairement indisponible.",
+    "cta": "DMA se soucie de la satisfaction de ses clients. C'est pourquoi, notre expertise dans le domaine des technologies de l'information vise à fournir à nos clients un service de qualité remarquable défiant toute concurrence.",
+    "about": {
+      "title": "Nous avons 3+ ans d'expériences dans le domaine de création des applications web et mobiles",
+      "content": "Nous est une Agence Web et Digitale basée à Douala au Cameroun spécialisée dans le Développement et l’intégration de solutions de Gestion sur mesure pour entreprises, le Développement de plateformes digitales (E-commerce, e-learning, e-services etc…), la Création de Sites Web professionnels, le Développement d’Applications Web et Mobiles, le Développement d’applications Métier, l’UI/UX Design, ainsi que dans la Création Graphique et la Formation Pratique dans les différents métiers du Numérique."
+    }
   },
   "Address": "Adresse",
   "Phone": "Téléphone",
@@ -53,6 +62,10 @@
   "Our Clients Feedback": "Commentaires de nos clients",
   "Subject": "Sujet",
   "Page not found": "Page non trouvée",
-
+  "DMA is a team of experts always ready to intervene for your satisfaction.": "DMA, c'est une équipe d'experts toujours prêts à intervenir pour votre satisfaction.",
+  "Experienced Professionals": "Professionnels expérimentés",
+  "Excellent Reputation": "Excellente réputation",
+  "Expert Technical Skills": "Compétences techniques d'expert",
+  "More than 10 projects completed for clients in the world.": "Plus de 10 projets réalisés des clients de partout dans le monde.",
   "Hello": "Hello"
 }

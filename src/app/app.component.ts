@@ -4,7 +4,7 @@ import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { filter } from 'rxjs/operators';
 
-declare const feather: any, $: any;
+declare const $: any, feather: any;
 
 @Component({
   selector: 'app-root',
@@ -13,26 +13,39 @@ declare const feather: any, $: any;
 })
 export class AppComponent implements OnInit, AfterViewInit {
   title = 'DMA Enterprise';
-  lang = 'fr';
+  lang = 'en';
 
   constructor(private translate: TranslateService,
               private router: Router,
               private activatedRoute: ActivatedRoute,
-              private titleService: Title) { }
+              private titleService: Title) {
+    this.translate.addLangs(['fr', 'en']);
+    this.translate.setDefaultLang('en');
+  }
 
   ngAfterViewInit(): void {
-    this.setDefaultLang()
     this.initView();
   }
 
   ngOnInit() {
+    this.setDefaultLang();
+
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd),
     ).subscribe(() => {
       const childRoute = this.getChild(this.activatedRoute);
       childRoute.data.subscribe((data: any) => {
-        this.titleService.setTitle(data.title);
+        this.translate.get(data.title).subscribe(value => {
+          this.title = 'DMA - ' + value;
+          this.titleService.setTitle(this.title);
+        });
       });
+
+      // Scroll to Top
+      window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+
+      // Feather Icon Js
+	    feather.replace();
     });
   }
 
@@ -45,27 +58,19 @@ export class AppComponent implements OnInit, AfterViewInit {
     }
   }
 
-  changeLang() {
-    this.translate.setDefaultLang(this.lang);
+  changeLang(lang: string) {
+    this.lang = lang;
     this.translate.use(this.lang);
     localStorage.setItem('language', this.lang);
   }
 
   setDefaultLang() {
-    const userLang = localStorage.getItem('language') || navigator.language;
-    if (userLang.startsWith('en')) {
-      this.lang = 'en';
-    }
-
-    this.translate.setDefaultLang(this.lang);
+    this.lang = localStorage.getItem('language') || this.translate.getBrowserLang() || 'en';
     this.translate.use(this.lang);
     localStorage.setItem('language', this.lang);
   }
 
   initView() {
-    // Feather Icon Js
-	  feather.replace();
-
     // Partner Slides
     $('.partner-slides').owlCarousel({
       loop: true,
