@@ -20,6 +20,8 @@ import { FeaturesComponent } from './pages/features/features.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { AboutComponent } from './pages/about/about.component';
 import { AwtPipe } from './pipes/awt.pipe';
+import { ArrayPipe } from './pipes/array.pipe';
+import { BlogDetailComponent } from './pages/blogs/blog-detail/blog-detail.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { AwtPipe } from './pipes/awt.pipe';
     FeaturesComponent,
     NotFoundComponent,
     AboutComponent,
-    AwtPipe
+    AwtPipe,
+    ArrayPipe,
+    BlogDetailComponent
   ],
   imports: [
     BrowserModule,

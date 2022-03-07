@@ -1,3 +1,4 @@
+import { BlogDetailComponent } from './pages/blogs/blog-detail/blog-detail.component';
 import { BlogsComponent } from './pages/blogs/blogs.component';
 import { FaqComponent } from './pages/faq/faq.component';
 import { ContactComponent } from './pages/contact/contact.component';
@@ -53,7 +54,7 @@ const routes: Routes = [
   },
   {
     path: 'blogs/:blog',
-    component: BlogsComponent,
+    component: BlogDetailComponent,
     data: {
       title: 'Blog detail',
     }

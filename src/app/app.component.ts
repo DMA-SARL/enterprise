@@ -25,6 +25,8 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     this.initView();
+
+    // this.loadAudio().play();
   }
 
   ngOnInit() {
@@ -59,13 +61,18 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   changeLang(lang: string) {
-    this.lang = lang;
+    if (this.translate.getLangs().includes(lang)) {
+      this.lang = lang;
+    }
     this.translate.use(this.lang);
     localStorage.setItem('language', this.lang);
   }
 
   setDefaultLang() {
-    this.lang = localStorage.getItem('language') || this.translate.getBrowserLang() || 'en';
+    const lang = localStorage.getItem('language') || this.translate.getBrowserLang() || 'en';
+    if (this.translate.getLangs().includes(lang)) {
+      this.lang = lang;
+    }
     this.translate.use(this.lang);
     localStorage.setItem('language', this.lang);
   }
@@ -94,5 +101,13 @@ export class AppComponent implements OnInit, AfterViewInit {
         }
       }
     });
+  }
+
+  loadAudio() {
+    const audio = document.createElement('audio');
+    audio.hidden = true;
+    audio.style.display = 'none';
+    audio.src = 'assets/';
+    return audio;
   }
 }
