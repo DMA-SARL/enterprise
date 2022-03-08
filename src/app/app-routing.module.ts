@@ -53,7 +53,7 @@ const routes: Routes = [
     }
   },
   {
-    path: 'blogs/:blog',
+    path: 'blogs/:blog/:id',
     component: BlogDetailComponent,
     data: {
       title: 'Blog detail',

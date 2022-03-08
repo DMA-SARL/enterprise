@@ -9,8 +9,8 @@ export class CommentsService {
 
   constructor(private http: HttpClient) { }
 
-  index(blogId: number, callback: any, page?: number) {
-    const url = environment.api_url + 'blogs/'+ blogId +'/comments' + page ? '?page=' + page : '';
+  index(blogId: number, callback: any, link?: string) {
+    const url = link || environment.api_url + 'blogs/'+ blogId +'/comments';
 
     this.http.get(url).subscribe({
       next: (response) => {
@@ -18,9 +18,6 @@ export class CommentsService {
       },
       error: (error) => {
         console.error(error);
-      },
-      complete: () => {
-        console.log('Done');
       }
     });
   }
@@ -32,9 +29,6 @@ export class CommentsService {
       },
       error: (error) => {
         console.error(error);
-      },
-      complete: () => {
-        console.log('Done');
       }
     });
   }

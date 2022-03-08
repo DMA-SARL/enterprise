@@ -28,19 +28,19 @@
           <div class="col-lg-6 col-md-6" *ngFor="let blog of blogs">
             <div class="single-blog-post">
               <div class="blog-image">
-                <a [routerLink]="['blogs']">
+                <a [routerLink]="['/blogs', blog.title | slug, blog.id]">
                   <img [src]="blog.image" alt="image">
                 </a>
 
                 <div class="date">
                   <i data-feather="calendar"></i>
-                  {{ blog.created_at | date:'short' }}
+                  {{ blog.created_at | date: 'medium' }}
                 </div>
               </div>
 
               <div class="blog-post-content">
                 <h3>
-                  <a [routerLink]="['blogs']">{{ blog.title }}</a>
+                  <a [routerLink]="['/blogs', blog.title | slug, blog.id]">{{ blog.title }}</a>
                 </h3>
 
                 <span>

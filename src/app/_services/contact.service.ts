@@ -9,7 +9,7 @@ export class ContactService {
 
   constructor(private http: HttpClient) { }
 
-  store(id: number, data: FormData, callback: any) {
+  store(data: FormData, callback: any) {
     this.http.post(environment.api_url + 'contacts', data).subscribe({
       next: (response) => {
         callback(response);

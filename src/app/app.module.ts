@@ -22,6 +22,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { AwtPipe } from './pipes/awt.pipe';
 import { ArrayPipe } from './pipes/array.pipe';
 import { BlogDetailComponent } from './pages/blogs/blog-detail/blog-detail.component';
+import { SlugPipe } from './pipes/slug.pipe';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { BlogDetailComponent } from './pages/blogs/blog-detail/blog-detail.compo
     AboutComponent,
     AwtPipe,
     ArrayPipe,
-    BlogDetailComponent
+    BlogDetailComponent,
+    SlugPipe
   ],
   imports: [
     BrowserModule,
